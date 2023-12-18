@@ -1,1 +1,18 @@
-# OpenSW_Final_Project
+## 💁🏻 About Team
+> 경기대학교 소프트웨어경영대학 AI컴퓨터공학부  
+> 2023학년도 2학기 오픈SW실습 팀 프로젝트
+- 교수: 조민택
+
+&nbsp;  
+
+## 🚀 Project
+- Kubernetes 구성 (마스터 노드(1) + 워커 노드(4))
+- 서비스: 레드마인, 젠킨스, GITHUB, 웹 서비스
+
+&nbsp;  
+
+## 👨‍👩‍👧‍👦 Members
+- 임건우
+- 이신행
+- 김영중
+- 안재홍
