@@ -10,7 +10,7 @@ $ docker run -d -p 9090:80 rps-oss:1.0
 
 ---
 
-이동 [ /lee/RockPaperScissors ]
+이동 [ /lee/todo-app ]
 
 $ docker build -t todo-oss:1.0 .
 $ docker run -d -p 9091:80 todo-oss:1.0
@@ -29,18 +29,18 @@ $ kubectl apply -f todo-ser000.yml
 
 확인
 
-kubectl get deployments
-kubectl get services
-kubectl get pods
+$ kubectl get deployments
+$ kubectl get services
+$ kubectl get pods
 
 
 삭제
 
-kubectl delete deployment rps-deployment
-kubectl delete deployment todo-deployment
+$ kubectl delete deployment rps-deployment
+$ kubectl delete deployment todo-deployment
 
-kubectl services rps-service
-kubectl services todo-service
+$ kubectl services rps-service
+$ kubectl services todo-service
 
-docker rmi rps-oss:1.0
-docker rmi todo-oss:1.0
+$ docker rmi rps-oss:1.0
+$ docker rmi todo-oss:1.0
