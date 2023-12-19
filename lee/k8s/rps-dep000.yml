@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rps-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rps-oss
+  template:
+    metadata:
+      labels:
+        app: rps-oss
+    spec:
+      containers:
+      - name: rps-container
+        image: rps-oss:1.0
+        ports:
+        - containerPort: 80
