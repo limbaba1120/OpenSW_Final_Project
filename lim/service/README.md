@@ -11,3 +11,7 @@ $ kubectl apply -f ~/OpenSW_Final_Project/lim/service/metallb.yaml
 
 $ kubectl apply -f ~/OpenSW_Final_Project/lim/service/metallb-l2config.yaml
 
+## 결과
+
+![Untitled](https://github.com/limbaba1120/OpenSW_Final_Project/assets/102224840/fac5cd4b-b820-4df1-8d34-776e0f5fb47b)
+![Untitled (1)](https://github.com/limbaba1120/OpenSW_Final_Project/assets/102224840/8f1da9e3-74d5-4e45-99c9-fb46a52ec66b)
