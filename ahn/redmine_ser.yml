@@ -7,4 +7,5 @@ spec:
     app: redmine
   ports:
     - port: 80
-      
+      targetPort: 3000
+  type: LoadBalancer 
