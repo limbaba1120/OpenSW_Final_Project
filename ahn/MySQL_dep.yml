@@ -17,6 +17,6 @@ spec:
         image: docker.io/jhong00/mysql:latest
         env:
           - name: MYSQL_ROOT_PASSWORD
-            value: OSS_2023
+            value: secret
         ports:
           - containerPort: 3306
