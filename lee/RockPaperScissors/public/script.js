@@ -9,6 +9,11 @@ function loadGame() {
         elems.push(element);
         element.style.display = "none";
     }
+
+    fetch('http://localhost:3000/getResults')
+    .then(response => response.json())
+    .then(results => console.log('Results:', results))
+    .catch(error => console.error('Error fetching results:', error));
 }
 
 function play() {
@@ -26,6 +31,17 @@ function play() {
     
     startRepeat()
     state = true;
+
+    fetch('http://localhost:3000/saveResult', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ left, right }),
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error saving result:', error));
 }
 
 function startRepeat(left, right) {
