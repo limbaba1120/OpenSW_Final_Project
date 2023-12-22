@@ -17,3 +17,5 @@ spec:
         image: docker.io/snhng/todo-oss:latest
         ports:
         - containerPort: 80
+
+        
