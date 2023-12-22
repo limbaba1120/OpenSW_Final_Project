@@ -44,11 +44,24 @@
 2. 마스터 노드와 워커 노드 join
 3. 오른쪽 이미지를 통해 연결된 것을 확인할 수 있다 -> kubectl get node(확인 명령어)
 
-#### ● Jenkins 서비스 배포
+#### ● Jenkins 서비스 시작
 
 <img width="480" src="https://github.com/limbaba1120/OpenSW_Final_Project/assets/116993837/a4a8c8c3-cc4a-4cd7-ae9c-ff57957cda77"> <img width="480" src="https://github.com/limbaba1120/OpenSW_Final_Project/assets/116993837/bce73ccf-4d47-4f60-bf63-82d21726fc3b">
 
 1. 마스터 노드에서 "kubectl get service jenkins" 명령어를 통해 jenkins 서비스 시작
 2. External-IP에 나온 IP를 통해 접속하면 서비스가 시작된 jenkins를 확인할 수 있다.
 
-#### ● Jenkins 서비스 배포
+#### ● Redmine 서비스 시작
+
+<img width="480" src="https://github.com/limbaba1120/OpenSW_Final_Project/assets/116993837/a2e7fb39-ce4d-4d8e-91b0-b93d10a27e2b"> <img width="480" src="https://github.com/limbaba1120/OpenSW_Final_Project/assets/116993837/67fabe6a-e796-4c10-955d-f3ce72dd0ece">
+
+1. kubectl apply -f <파일 이름> 을 통해 deployment와 service를 실행시킬 수 있다
+2. 위의 명령어는 redmine과 mysql를 실행시킨 것이다
+3. External IP통해 접속하면 서비스되는 redmine을 확인할 수 있다.
+
+#### ● 웹 서비스 시작
+
+<img width="480" src="https://github.com/limbaba1120/OpenSW_Final_Project/assets/116993837/a034c719-0995-4e4f-ae4c-78c7aab6e857"> <img width="480" src="https://github.com/limbaba1120/OpenSW_Final_Project/assets/116993837/d86d5a3a-f00a-4ac0-8bf8-bff8ef3f8db5">
+
+1. 첫 번째 웹 서비스는 가위바위보를 하는 것으로 양쪽 다 랜덤으로 가위 바위 보의 결과를 낸다
+2. 두 번째 웹 서비스는 To-Do List로 show/unshow를 통해 item list를 표시여부를 결정할 수 있다
