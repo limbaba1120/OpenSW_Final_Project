@@ -7,4 +7,4 @@ WORKDIR /usr/share/nginx/html
 
 COPY . .
 
-CMD ["sh", "-c", "nginx -g 'daemon off;' & node server.js"]
+CMD ["nginx", "-g", "daemon off;"]
